@@ -1,6 +1,6 @@
 # Selenium UI testing with AWS Lambda Layers
 
-This is an example of Selenium testing with AWS lambda layers
+This is an example of set up Selenium testing with AWS lambda layers Python3.6
 
 ### File Structure
 
