@@ -1,0 +1,17 @@
+
+service: selenium-lambda
+
+
+provider:
+  name: aws
+  runtime: python3.6
+  region: ap-southeast-2
+  timeout: 900
+
+
+functions:
+  hello:
+    handler: handler.hello
+    layers:
+      - ${cf:selenium-layer-dev.SeleniumLayerExport}
+      - ${cf:selenium-layer-dev.ChromedriverLayerExport}
