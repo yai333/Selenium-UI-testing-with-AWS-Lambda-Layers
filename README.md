@@ -8,17 +8,18 @@ This is an example of set up Selenium testing with AWS lambda layers Python3.6
 - lambda
 
 ```bash
-── /seleniumLayer/            # Lambda Layer of Python Lib
-  ├── /python/   # Python libs
-  │ └── /lib/    
-  │   └── /python3.6/*    
-  ├── /chromedriver/    # Lambda Layer of headless Chrome 
-  │ ├── /chromedriver   # Chrome Driver
-  │ └── /headless-chromium      # Headless Chrome binary
+── /seleniumLayer/  # lambda layers
+  ├── /selenium  lambda layer of selenium lib
+  │  └──/python/      # python libs
+  │   └── /lib/    
+  │     └── /python3.6/*    
+  ├── /chromedriver/    # lambda layer of headless Chrome 
+  │ ├── /chromedriver   # chrome driver
+  │ └── /headless-chromium # headless chrome binary
   └── /serverless.yaml     
-── /lambda/            # Lambda function
-  ├── /handler.py      # source code of Lambda function 
-  └── /serverless.yaml   
+── /lambda/            # lambda function
+  ├── /handler.py      # source code of lambda function 
+  └── /serverless.yaml # serverless config
 ```
 ### Stack
 
@@ -35,6 +36,7 @@ Go to root directory of project
 $ pip3.6 install -t seleniumLayer/selenium/python/lib/python3.6/site-packages selenium=2.37
 
 # download chrome driver
+$ cd seleniumLayer
 $ mkdir chromedriver
 $ cd chromedriver
 $ curl -SL https://chromedriver.storage.googleapis.com/2.37/chromedriver_linux64.zip > chromedriver.zip
