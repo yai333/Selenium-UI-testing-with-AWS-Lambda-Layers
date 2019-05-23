@@ -50,6 +50,14 @@ $ rm headless-chromium.zip
 
 ```
 
+### Install serverless command
+Do this if you don't have serverless in your machine yet
+```Try running,
+npm config set prefix /usr/local
+and then,
+npm i -g serverless
+```
+
 ### Deploy Lambda Layers
 Go to root directory of project
 ```buildoutcfg
