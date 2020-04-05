@@ -11,15 +11,13 @@ provider:
 layers:
   selenium:
     path: selenium
-    CompatibleRuntimes: [
-      "python3.6"
-    ]
+    compatibleRuntimes:
+      - "python3.6"
   chromedriver:
     path: chromedriver
     description: chrome driver layer
-    CompatibleRuntimes: [
-      "python3.6"
-    ]
+    compatibleRuntimes:
+      - "python3.6"
 resources:
   Outputs:
     SeleniumLayerExport:
