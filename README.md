@@ -33,7 +33,7 @@ This is an example of set up Selenium testing with AWS lambda layers Python3.6
 Go to root directory of project
 ```buildoutcfg
 # download Selenium 2.37
-$ pip3.6 install -t seleniumLayer/selenium/python/lib/python3.6/site-packages selenium=2.37
+$ pip3.6 install -t seleniumLayer/selenium/python/lib/python3.6/site-packages selenium==2.37
 
 # download chrome driver
 $ cd seleniumLayer
